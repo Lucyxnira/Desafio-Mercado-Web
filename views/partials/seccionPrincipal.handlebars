@@ -1,0 +1,8 @@
+<div class="seccion-principal">
+  <h2>{{mensajeBienvenida}}</h2>
+  <div class="row">
+    {{#each productos}}
+      {{> producto nombre=this.nombre}}
+    {{/each}}
+  </div>
+</div>

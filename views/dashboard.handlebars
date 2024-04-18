@@ -1,0 +1,18 @@
+<!-- Dashboard-->
+{{> menu}}
+<div class="container mt-5">
+  <!-- Sección Principal -->
+  <div class="seccion-principal">
+    <h3>{{mensajeBienvenida}}¡Bienvenido al mercado Web, seleccione sus productos!</h3>
+    <div class="row">
+      {{#each productos}}
+        <div class="col-md-4">
+          {{> producto this}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+
